@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Getúlio Vargas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dark-theme">
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <h1 class="titulo-principal fw-bold">Getúlio Vargas</h1>
+            <ul class="nav mt-2">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#biografia">Biografia</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <!-- Menu de Acessibilidade -->
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold" aria-expanded="false">
+                    Acessibilidade
+                </button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alternar tema">
+                        <i class="bi bi-shadows"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <!-- INÍCIO -->
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 fst-italic fw-bold">Conheça</h1>
+                    <h2 class="fw-bold">Getúlio Dornelles Vargas</h2>
+                    <p class="mt-2">Um dos presidentes mais influentes da história do Brasil</p>
+                    <a href="#biografia" class="btn btn-primary btn-lg botao-inicio fw-semibold">Explorar</a>
+                </div>
+                <img src="img/getulio1.png" alt="Foto de Getúlio Vargas" class="img-fluid img-inicio shadow">
+            </div>
+        </section>
+
+        <!-- BIOGRAFIA -->
+        <section id="biografia" class="my-5 pt-6">
+            <div class="container d-flex align-items-center flex-column flex-lg-row">
+                <div class="col-lg-5 d-flex justify-content-center mb-4 mb-lg-0">
+                    <img src="img/getulio2.png" class="rounded shadow img-fluid" alt="Getúlio Vargas jovem">
+                </div>
+                <div class="col-lg-7 ps-lg-4">
+                    <h2>Quem foi Getúlio Vargas?</h2>
+                    <p>Getúlio Dornelles Vargas (1882–1954) foi um dos líderes mais importantes da história do Brasil,
+                        governando o país em dois períodos. Seu primeiro governo começou em 1930, após a Revolução que
+                        pôs fim à chamada “República Velha”, e durou até 1945. Nesse período, ele consolidou o Estado
+                        Novo, um regime autoritário que buscava modernizar o país e fortalecer o papel do Estado na
+                        economia e na sociedade. Foi durante esse tempo que Vargas criou a Consolidação das Leis do
+                        Trabalho (CLT), garantiu direitos aos trabalhadores e incentivou a industrialização do Brasil.
+
+                        Depois de alguns anos fora do poder, Vargas voltou em 1951, agora eleito democraticamente, e
+                        governou até 1954. Nessa fase, continuou a implementar políticas sociais e trabalhistas,
+                        buscando equilibrar interesses de diferentes grupos políticos e mantendo seu foco na relação
+                        entre Estado e sociedade. Até hoje, ele é lembrado como um líder que transformou a vida dos
+                        trabalhadores, modernizou a economia e deixou marcas profundas na política e na legislação do
+                        país.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section id="galeria" class="my-5">
+            <h2 class="text-center pt-5">Galeria Histórica</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center g-4">
+                    <div class="col-md-4 zoom-img"><img src="img/getulio1.png" class="img-fluid rounded-5 shadow"
+                            alt="Vargas 1"></div>
+                    <div class="col-md-4 zoom-img"><img src="img/getulio2.png" class="img-fluid rounded-5 shadow"
+                            alt="Vargas 2"></div>
+                    <div class="col-md-4 zoom-img"><img src="img/getulio3.png" class="img-fluid rounded-5 shadow"
+                            alt="Vargas 3"></div>
+                </div>
+                <div class="row mt-4 justify-content-md-center g-4">
+                    <div class="col-md-6 zoom-img"><img src="img/getulio4.png" class="img-fluid rounded-5 shadow"
+                            alt="Vargas 4"></div>
+                    <div class="col-md-6 zoom-img"><img src="img/getulio5.png" class="img-fluid rounded-5 shadow"
+                            alt="Vargas 5"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Thiago Jordan..</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

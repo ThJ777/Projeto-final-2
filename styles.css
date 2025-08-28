@@ -1,0 +1,186 @@
+/* ===== FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* ===== VARIÁVEIS ===== */
+:root {
+    --primaria: #000000;
+    --secundaria: #FFD700;
+    --texto: #ffffff;
+    --fundo-secao: #111111;
+}
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primaria);
+    color: var(--texto);
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ===== NAVBAR ===== */
+nav, .navbar {
+    background-color: var(--primaria);
+    padding: 1rem 2rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-link {
+    color: var(--secundaria) !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+}
+
+/* ===== TITULOS ===== */
+.titulo-principal {
+    color: var(--texto);
+}
+
+/* ===== MENU DE ACESSIBILIDADE ===== */
+.menu-acessibilidade {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#botao-acessibilidade {
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#botao-acessibilidade.rotacao-botao {
+    transform: none; /* desativa rotação */
+}
+
+.opcoes-acessibilidade {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    background: rgba(0,0,0,0.7);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.opcoes-acessibilidade.apresenta-lista {
+    display: flex;
+}
+
+/* ===== HERO ===== */
+.inicio-fundo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.esquerda-conteudo h1,
+.esquerda-conteudo h2,
+.esquerda-conteudo p {
+    transition: color 0.3s ease;
+}
+
+/* ===== BIOGRAFIA ===== */
+#biografia {
+    background-color: rgba(0,0,0,0.3); /* deixa semi-transparente para ver fundo */
+    color: var(--texto);
+    padding: 3rem;
+    border-radius: 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#biografia h2 {
+    margin-bottom: 1rem;
+}
+
+#biografia p {
+    font-size: inherit; /* agora herda do body */
+    line-height: 1.6;   /* mantém legibilidade */
+}
+
+/* ===== GALERIA ===== */
+#galeria {
+    background-color: rgba(0,0,0,0.3);
+    color: var(--texto);
+    padding: 3rem;
+    border-radius: 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#galeria h2 {
+    margin-bottom: 1rem;
+}
+
+/* ===== BOTÃO INICIO ===== */
+.botao-inicio {
+    background-color: var(--secundaria);
+    color: #000;
+    border-radius: 25px;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.botao-inicio:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== TEMA CLARO ===== */
+body.light-theme {
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+body.light-theme .titulo-principal,
+body.light-theme h1, body.light-theme h2, body.light-theme h3 {
+    color: #000;
+}
+
+body.light-theme nav,
+body.light-theme .navbar {
+    background-color: #ffffff; /* fundo claro */
+    border-bottom: 1px solid #ddd; /* separação sutil */
+}
+
+body.light-theme .nav-link {
+    color: #222 !important; /* contraste forte */
+}
+
+body.light-theme .nav-link:hover {
+    color: #555 !important; /* destaque */
+}
+
+body.light-theme #biografia,
+body.light-theme #galeria {
+    background-color: rgba(255,255,255,0.8); /* fundo leve transparente */
+    color: #222;
+}
+
+/* ===== TEMA ESCURO ===== */
+body.dark-theme {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-theme .titulo-principal,
+body.dark-theme h1, body.dark-theme h2, body.dark-theme h3 {
+    color: #fff;
+}
+
+body.dark-theme #biografia,
+body.dark-theme #galeria {
+    background-color: rgba(0,0,0,0.3);
+    color: #f5f5f5;
+}
